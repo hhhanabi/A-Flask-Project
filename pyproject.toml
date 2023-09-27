@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Asuka <645482284@qq.com>"]
+readme = "README.md"
+packages = [{include = "poetry_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.3.3"
+flask-mongoengine = "^1.0.0"
+flask-login = "^0.6.2"
+flask-admin = "^1.6.1"
+flask-script = "^2.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple"
+priority = "default"
