@@ -1,4 +1,8 @@
 import os
+from dotenv import load_dotenv
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
 
 basedir=os.path.abspath(os.path.dirname(__file__))
 class Config(object):
@@ -13,3 +17,4 @@ class Config(object):
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['your-email@example.com']
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
