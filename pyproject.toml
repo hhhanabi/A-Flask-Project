@@ -19,6 +19,8 @@ pyjwt = "^2.8.0"
 flask-bootstrap = "^3.3.7.1"
 flask-babel = "^4.0.0"
 elasticsearch = "^8.10.0"
+flask-moment = "^1.0.5"
+email-validator = "^2.0.0.post2"
 
 
 [build-system]

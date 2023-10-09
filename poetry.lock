@@ -111,6 +111,30 @@ url = "http://mirrors.aliyun.com/pypi/simple"
 reference = "aliyun"
 
 [[package]]
+name = "dnspython"
+version = "2.4.2"
+description = "DNS toolkit"
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "dnspython-2.4.2-py3-none-any.whl", hash = "sha256:57c6fbaaeaaf39c891292012060beb141791735dbb4004798328fc2c467402d8"},
+    {file = "dnspython-2.4.2.tar.gz", hash = "sha256:8dcfae8c7460a2f84b4072e26f1c9f4101ca20c071649cb7c34e8b6a93d58984"},
+]
+
+[package.extras]
+dnssec = ["cryptography (>=2.6,<42.0)"]
+doh = ["h2 (>=4.1.0)", "httpcore (>=0.17.3)", "httpx (>=0.24.1)"]
+doq = ["aioquic (>=0.9.20)"]
+idna = ["idna (>=2.1,<4.0)"]
+trio = ["trio (>=0.14,<0.23)"]
+wmi = ["wmi (>=1.5.1,<2.0.0)"]
+
+[package.source]
+type = "legacy"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
 name = "dominate"
 version = "2.8.0"
 description = "Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API."
@@ -166,6 +190,26 @@ elastic-transport = ">=8,<9"
 [package.extras]
 async = ["aiohttp (>=3,<4)"]
 requests = ["requests (>=2.4.0,<3.0.0)"]
+
+[package.source]
+type = "legacy"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "email-validator"
+version = "2.0.0.post2"
+description = "A robust email address syntax and deliverability validation library."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "email_validator-2.0.0.post2-py3-none-any.whl", hash = "sha256:2466ba57cda361fb7309fd3d5a225723c788ca4bbad32a0ebd5373b99730285c"},
+    {file = "email_validator-2.0.0.post2.tar.gz", hash = "sha256:1ff6e86044200c56ae23595695c54e9614f4a9551e0e393614f764860b3d7900"},
+]
+
+[package.dependencies]
+dnspython = ">=2.0.0"
+idna = ">=2.0.0"
 
 [package.source]
 type = "legacy"
@@ -302,6 +346,26 @@ url = "http://mirrors.aliyun.com/pypi/simple"
 reference = "aliyun"
 
 [[package]]
+name = "flask-moment"
+version = "1.0.5"
+description = "Formatting of dates and times in Flask templates using moment.js."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "Flask-Moment-1.0.5.tar.gz", hash = "sha256:33307ecd4af8290b6df6a9828ff55ac0977d0567817f9bc0f69803d22ed2b55c"},
+    {file = "Flask_Moment-1.0.5-py3-none-any.whl", hash = "sha256:6e7b3eef89e2137bbbee975405f241a68a44edfa34bf052c92d84364992adca6"},
+]
+
+[package.dependencies]
+Flask = "*"
+packaging = ">=14.1"
+
+[package.source]
+type = "legacy"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
 name = "flask-sqlalchemy"
 version = "3.1.1"
 description = "Add SQLAlchemy support to your Flask application."
@@ -421,6 +485,22 @@ files = [
 [package.extras]
 docs = ["Sphinx", "docutils (<0.18)"]
 test = ["objgraph", "psutil"]
+
+[package.source]
+type = "legacy"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "idna"
+version = "3.4"
+description = "Internationalized Domain Names in Applications (IDNA)"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
+    {file = "idna-3.4.tar.gz", hash = "sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"},
+]
 
 [package.source]
 type = "legacy"
@@ -556,6 +636,22 @@ files = [
     {file = "MarkupSafe-2.1.3-cp39-cp39-win32.whl", hash = "sha256:fec21693218efe39aa7f8599346e90c705afa52c5b31ae019b2e57e8f6542bb2"},
     {file = "MarkupSafe-2.1.3-cp39-cp39-win_amd64.whl", hash = "sha256:3fd4abcb888d15a94f32b75d8fd18ee162ca0c064f35b11134be77050296d6ba"},
     {file = "MarkupSafe-2.1.3.tar.gz", hash = "sha256:af598ed32d6ae86f1b747b82783958b1a4ab8f617b06fe68795c7f026abbdcad"},
+]
+
+[package.source]
+type = "legacy"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "packaging"
+version = "23.2"
+description = "Core utilities for Python packages"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "packaging-23.2-py3-none-any.whl", hash = "sha256:8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7"},
+    {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
 ]
 
 [package.source]
@@ -810,4 +906,4 @@ reference = "aliyun"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e26179cac4fa85a726d6ffda3d9de1880b5c72222003b379dda5d4233ed9b264"
+content-hash = "3665c03b391724a385aa41171aa9766760588e5d16634a73e7d97083a048b75e"
